@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mr. Thiru - Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #90cdf4;
+      padding: 40px;
+      text-align: center;
+      color: #000;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin: 10px 0;
+      font-size: 1.2rem;
+    }
+
+    .btn {
+      background-color: #007bff;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 40px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      margin: 20px;
+    }
+
+    .container {
+      background-color: #b2ebf2;
+      padding: 20px;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #222;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive tweaks */
+    @media screen and (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .btn {
+        padding: 8px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mr. Thiru</h1>
+    <p>Frontend Developer | Web Enthusiast | Problem Solver</p>
+    <button class="btn" onclick="scrollToSection('contact')">Contact Me</button>
+  </header>
+
+  <div class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hi, I'm Thiru, a passionate Frontend Developer with experience in building user-friendly and responsive websites. I love solving problems and making an impact through code. I specialize in HTML, CSS, JavaScript, React, and various modern web technologies.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>React, Redux</li>
+        <li>Git, GitHub</li>
+        <li>Responsive Web Design</li>
+        <li>UI/UX Design</li>
+        <li>Problem Solving</li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <h3>Frontend Developer at XYZ Company</h3>
+      <p><strong>January 2023 - Present</strong></p>
+      <p>Worked with a team of developers to build scalable and responsive web applications.</p>
+
+      <h3>Intern at ABC Tech</h3>
+      <p><strong>June 2022 - December 2022</strong></p>
+      <p>Assisted in developing responsive websites using HTML, CSS, and JavaScript.<br/>
+         Contributed to bug fixes and feature enhancements on the client-side code.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>If you'd like to get in touch, feel free to reach out to me at:</p>
+      <ul>
+        <li>Email: <a href="mailto:thiru@gmail.com">thiru@gmail.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/thiru" target="_blank">Thiru</a></li>
+        <li>GitHub: <a href="https://github.com/thiru" target="_blank">Thiru</a></li>
+      </ul>
+    </section>
+  </div>
+
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  </script>
+</body>
+</html>
